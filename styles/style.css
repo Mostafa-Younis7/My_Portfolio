@@ -1,0 +1,327 @@
+/* 
+  LinkedIn: www.linkedin.com/in/mostafa-younis-24ba19253
+  https://github.com/Mostafa-Younis7
+
+*/
+
+section {
+  padding: 80px 15px;
+}
+
+:root {
+  --icon-background: #dbeafe;
+  --secondary-text-color: #155dfc;
+  --p-color: #364153;
+}
+
+p {
+  color: var(--p-color);
+}
+
+section .container {
+  padding: 20px;
+}
+
+/* navbar */
+nav {
+  z-index: 999;
+}
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: var(--bs-gray-500);
+}
+
+.nav-link::before {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background-color: var(--bs-blue);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-item:hover .nav-link::before {
+  width: 100%;
+}
+
+/* header */
+header {
+  background-color: #e6edff;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  margin-bottom: 60px;
+  font-family: robot;
+}
+
+h3 {
+  color: var(--bs-gray-800);
+  font-family: 'Roboto';
+  font-size: 1.4rem;
+}
+
+.title-name {
+  color: var(--secondary-text-color) !important;
+  font-family: robot;
+  font-weight: bold;
+}
+
+.header-icon {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  color: #333;
+  transition: box-shadow 0.3s;
+}
+
+.header-icon:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  font-family: 'roboto';
+  font-weight: 400;
+  color: var(--p-color);
+  margin-bottom: 1.5rem;
+}
+
+.header-captoin {
+  max-width: 700px;
+  padding: 0 15px;
+}
+
+/* about */
+.about-img {
+  width: 100%;
+}
+/* services */
+.service-icon,
+.icon,
+.icon-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.service-icon,
+.icon-round {
+  border-radius: 50%;
+}
+
+.service-icon {
+  font-size: 46px;
+  width: 100px;
+  height: 100px;
+  border: var(--bs-blue) solid 8px;
+  color: var(--bs-blue);
+  background-color: var(--icon-background);
+}
+
+.service-icon:hover {
+  background-color: var(--bs-blue);
+  color: white;
+  border-color: var(--icon-background);
+}
+
+/* work */
+.work-card {
+  position: relative;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+#work {
+  background-color: #f9fafb;
+}
+
+.work-tools {
+  margin-bottom: 1rem;
+}
+
+.work-tool {
+  background-color: #dbeafe;
+  color: var(--bs-blue);
+  width: fit-content;
+  padding: 5px 12px 3px;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 0 5px 7px 0;
+  font-family: robot;
+}
+
+.work-links {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+/* contact me */
+textarea {
+  height: 150px;
+}
+
+#contacts {
+  background-color: #f9fafb;
+}
+
+.contact-method {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-icon,
+.skill-icon {
+  border-radius: 10px;
+  background-color: var(--icon-background);
+  color: var(--bs-blue);
+}
+
+.contact-icon {
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+}
+
+.skill-icon {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+  border: none;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--p-color);
+}
+
+/* Blue Bullets using Pseudo-elements */
+.skill-list li::before {
+  content: '•';
+  color: var(--bs-blue);
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+/* Hover effect for better UX */
+.skill-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* footer */
+footer {
+  background-color: #101828;
+  padding: 40px 15px;
+}
+
+footer p,
+footer .icon {
+  color: var(--bs-gray-500);
+}
+
+footer .icon:hover {
+  color: white;
+}
+
+/* blog */
+
+.blog-user img {
+  width: 75px;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.black-text {
+  transition: color 0.3s;
+  color: black;
+}
+
+.black-text:hover {
+  color: #333;
+}
+
+.navbar-custom {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+/* 1. Default Styles (Mobile First) */
+
+/* 2. Small (sm) */
+@media (min-width: 576px) {
+}
+
+/* 3. Medium (md) */
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* 4. Large (lg) */
+@media (min-width: 992px) {
+  .sub-title {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+}
+
+/* 5. Extra Large (xl) */
+@media (min-width: 1200px) {
+  .about-img {
+    width: 82%;
+  }
+}
+
+/* 6. Extra Extra Large (xxl) */
+@media (min-width: 1400px) {
+}
