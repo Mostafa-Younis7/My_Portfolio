@@ -61,7 +61,7 @@ h1 {
 
 h2 {
   margin-bottom: 60px;
-  font-family: robot;
+  font-family: "Roboto";
 }
 
 h3 {
@@ -72,7 +72,7 @@ h3 {
 
 .title-name {
   color: var(--secondary-text-color) !important;
-  font-family: robot;
+  font-family: 'Roboto';
   font-weight: bold;
 }
 
@@ -91,7 +91,7 @@ h3 {
 
 .sub-title {
   font-size: 1.4rem;
-  font-family: 'roboto';
+  font-family: 'Roboto';
   font-weight: 400;
   color: var(--p-color);
   margin-bottom: 1.5rem;
@@ -159,7 +159,7 @@ h3 {
   border-radius: 100px;
   display: inline-block;
   margin: 0 5px 7px 0;
-  font-family: robot;
+  font-family: 'Roboto';
 }
 
 .work-links {
