@@ -430,39 +430,39 @@ I am committed to professional growth, clear communication, and technical precis
               </div>
             </div>
             <div class="col-lg-6 contacts-form">
-              <form
-                action="https://formspree.io/f/xkopdkvy"
-                method="POST"
-              >
+              <form action="https://formspree.io/f/xkopdkvy" method="POST">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Name</label
-                  >
+                  <label for="full-name" class="form-label">Name</label>
                   <input
                     type="text"
+                    name="name" 
                     class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
+                    id="full-name"
+                    required
                   />
                 </div>
+
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Email</label
-                  >
+                  <label for="email-address" class="form-label">Email</label>
                   <input
                     type="email"
+                    name="email"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="email-address"
+                    required
                   />
                 </div>
+
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
                   <textarea
                     name="message"
                     id="message"
                     class="form-control"
+                    required
                   ></textarea>
                 </div>
+
                 <button type="submit" class="btn btn-primary w-100 fw-bold">
                   Send Message
                 </button>
